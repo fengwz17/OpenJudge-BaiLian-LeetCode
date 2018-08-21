@@ -48,7 +48,7 @@ Pair3 : impossible
 using namespace std;
 
 char board[MAXIN + 2][MAXIN + 2];
-int minstep, w, h, to[4][2] = { {0,1},{1,0},{0,0},{1,1} };
+int minstep, w, h, to[4][2] = { {0,1},{1,0},{0,-1},{-1,0} };
 bool mark[MAXIN + 2][MAXIN + 2];
 
 void Search(int now_x, int now_y, int end_x, int end_y, int step, int f)
